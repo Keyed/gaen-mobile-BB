@@ -78,8 +78,8 @@
     },
     "complete_healthcheck": "Complete HealthCheck",
     "complete": {
-      "body": "You’re helping contain the spread of the virus and protect others in your community and beyond.",
-      "title": "Thanks for keeping everyone safe!"
+      "body": "You’re helping decrease the spread of the virus and protect others in your community and beyond.",
+      "title": "Thank you for keeping everyone safe!"
     }
   },
   "export": {
