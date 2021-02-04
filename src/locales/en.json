@@ -196,7 +196,8 @@
     "why_did_i_get_an_en": "Why did I get an exposure notification?",
     "why_did_i_get_an_en_para": "You will receive an exposure notification when someone you have been in close contact with later uses the app to report a positive COVID-19 test.",
     "your_device_exchanged": "Within each date range below, your device exchanged keys with another device that later received a verified positive test result.",
-    "your_recommended_quarantine_is_over": "Your recommended quarantine is over. Please continue to follow the health guidelines."
+    "your_recommended_quarantine_is_over": "Your recommended quarantine is over. Please continue to follow the health guidelines.",
+    "more_info_header": "More Info"
   },
   "exposure_notification_alerts": {
     "bluetooth_body": "To activate Exposure Notifications, you must first turn on Bluetooth in your Settings app.",
@@ -240,6 +241,7 @@
     "check_if_your_symptoms": "Enter your symptoms and get an instant recommendation on how to stay safe.",
     "complete_healthcheck": "Complete Healthcheck",
     "could_not_open_link": "Could not open link: {{url}}. Please try to open the url in your phone's browser.",
+    "covid_data": "Covid Data",
     "enter_symptoms": "Enter symptoms",
     "error": {
       "share_link_failed": "Failed to open link to share"
@@ -358,6 +360,7 @@
   },
   "screen_titles": {
     "bluetooth": "Bluetooth",
+    "covid_data_webview": "Covid Data",
     "exposure_history": "Exposures",
     "exposure_notifications": "Exposure Notifications",
     "exposure_scanning": "Exposure Detection",
@@ -528,6 +531,8 @@
     "no_keys_on_device_title": "No exposures to share from device",
     "not_authorized_body": "You did not authorize the app to share your Random IDs.",
     "not_authorized_title": "Did not authorize",
+    "rate_limit_body": "You've reach the daily submission limit. Please try again in 24 hours.",
+    "rate_limit_title": "Max submissions reached",
     "unknown_body": "An unexpected error occurred. Please try again.",
     "unknown_title": "Something Went Wrong"
   }

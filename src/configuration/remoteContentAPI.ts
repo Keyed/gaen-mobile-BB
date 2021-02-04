@@ -19,6 +19,7 @@ export interface CustomCopy {
   legal?: string
   verificationCodeInfo?: string
   verificationCodeHowDoIGet?: string
+  verificationCodeOnSubmitInfo?: string
   appTransition?: {
     header: string
     body1: string
@@ -44,6 +45,7 @@ const CustomCopyDecoder = JsonDecoder.object<CustomCopy>(
     legal: JsonDecoder.optional(JsonDecoder.string),
     verificationCodeInfo: JsonDecoder.optional(JsonDecoder.string),
     verificationCodeHowDoIGet: JsonDecoder.optional(JsonDecoder.string),
+    verificationCodeOnSubmitInfo: JsonDecoder.optional(JsonDecoder.string),
     appTransition: JsonDecoder.optional(AppTransitionCopyDecoder),
     callbackFormInstruction: JsonDecoder.optional(JsonDecoder.string),
   },
@@ -102,7 +104,7 @@ type RemoteCopyError = "Unknown"
 export const fetchCustomCopy = async (
   baseUrl: string,
 ): Promise<NetworkResponse<Resource, RemoteCopyError>> => {
-  const copyEndpoint = baseUrl + "content/v1/copy.json"
+  const copyEndpoint = new URL("content/v1/copy.json", baseUrl).href
 
   try {
     const response = await fetch(copyEndpoint, {
