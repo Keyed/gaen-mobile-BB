@@ -25,7 +25,8 @@
     "test": "jest --config=./jest/config.js",
     "test:watch": "jest --config=./jest/config.js --watch",
     "assemble-android-debug": "react-native bundle --platform android --dev true --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && ./android/gradlew -p android assembleDebug",
-    "bundle:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "bundle:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && rm -rf ./android/app/src/main/res/drawable-*/node* && rm -rf ./android/app/src/main/res/drawable-*/src* && rm -rf ./android/app/src/main/res/raw && ./android/gradlew -p android assembleRelease",
+    "bundle:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
     "lint:android": "./android/gradlew -p android app:lintDebug app:ktlintCheck app:checkstyle"
   },
   "husky": {
