@@ -873,6 +873,7 @@
 				D447FDBA24BF332B00250621 /* Configure ATS */,
 				C53FD0BB24719AD1006D3268 /* Bundle React Native code and images */,
 				CA7A0CD328168F07F79863AA /* [CP] Copy Pods Resources */,
+				8D0E45D6888D84FEDEB71B5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1023,6 +1024,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8D0E45D6888D84FEDEB71B5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BT/Pods-BT-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BT/Pods-BT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B8B3F66D67BD3E6B2C9A66F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

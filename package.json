@@ -16,7 +16,7 @@
     "postinstall": "npx react-native-jetifier && ./bin/postinstall.sh",
     "install:pod": "cd ios && bundle install --quiet && bundle exec pod install --silent",
     "clean": "rm -rf node_modules && yarn cache clean && watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-*",
-    "clean-all": "yarn clean && ./android/gradlew -p ./android clean && rm ios/Podfile.lock",
+    "clean-all": "./android/gradlew -p ./android clean && rm ios/Podfile.lock && yarn clean",
     "reset": "yarn clean-all && yarn && yarn install:pod",
     "i18n:check": "./src/locales/check.sh",
     "i18n:extract": "i18next",
@@ -41,6 +41,7 @@
   "dependencies": {
     "@bugsnag/react-native": "^7.3.4",
     "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/cli-platform-android": "^4.13.0",
     "@react-native-community/datetimepicker": "^3.0.8",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-community/netinfo": "^5.9.4",
